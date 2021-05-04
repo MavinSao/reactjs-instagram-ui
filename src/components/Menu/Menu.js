@@ -4,12 +4,10 @@ import styled from 'styled-components';
 function Menu() {
     return (
         <MenuBar>
-            <img alt="img" src="logo/icons8-a_home.png" />
-            <img alt="img" src="logo/icons8-birdhouse.png" />
-            <img alt="img" src="logo/icons8-fireplace.png" />
-            <img alt="img" src="logo/icons8-herbal_medicine.png" />
-            <img alt="img" src="logo/icons8-home_button.png" />
-            <img alt="img" src="logo/icons8-nest.png" />
+            <img alt="home" src="icon/Home.png" />
+            <img alt="img" src="icon/Post.png" />
+            <img alt="img" src="icon/Setting.png" />
+            <img alt="img" src="icon/friends.png" />
         </MenuBar>
     )
 }

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Navbar() {
     return (
         <Nav>
-            <h2>Logo</h2>
+            <img alt="ss" width={200} src="logo/BBC_Knowledge_HD.png"/>
             <input className="search-bar" type="text" placeholder="search" />
         </Nav>
     )
@@ -18,9 +18,12 @@ const Nav = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffffff;
     border-bottom: 1px solid #f7f7f7;
-
+    background: #ffffff;
+    
+    img{
+        margin-left: 10px;
+    }
 
     .search-bar{
         height: 30px;

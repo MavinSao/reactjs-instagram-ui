@@ -14,8 +14,11 @@ function Content() {
 
 const ContentBody = styled.div`
         flex:12;
-        background: #f5fffe;
-        overflow: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar{
+            display: none;
+        }
 `
 
 export default Content

@@ -15,7 +15,7 @@ function Profile() {
 }
 
 const ProfileDiv = styled.div`
-        flex:4;
+        flex:3;
         display: flex;
         box-sizing: border-box;
         padding: 15px;
