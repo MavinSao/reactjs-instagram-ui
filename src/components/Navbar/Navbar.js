@@ -20,7 +20,6 @@ const Nav = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #f7f7f7;
-    background: #ffffff;
 
     img{
         margin-left: 10px;

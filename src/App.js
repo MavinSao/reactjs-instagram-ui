@@ -4,6 +4,12 @@ import Menu from './components/Menu/Menu';
 import Content from './components/Content/Content';
 import Profile from './components/Profile/Profile';
 import GlobalStyle from './components/Style/GlobleStyle';
+
+import React, { useState, useEffect } from "react";
+
+import {ThemeProvider} from "styled-components";
+import { lightTheme, darkTheme } from "./components/Themes/Themes"
+
 import { BrowserRouter as Router} from "react-router-dom";
 
 const Layout = styled.div`
@@ -14,15 +20,26 @@ const Layout = styled.div`
 `
 
 function App() {
+
+
+  const [theme, setTheme] = useState('light');
+
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
+
+
   return (
-    <Router>
-      <Layout>
-        <GlobalStyle/>
-        <Menu />
-        <Content />
-        <Profile />
-      </Layout>
-    </Router>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <Router>
+        <Layout>
+          <GlobalStyle/>
+          <Menu changeTheme={themeToggler} theme={theme}/>
+          <Content />
+          <Profile />
+        </Layout>
+      </Router>
+    </ThemeProvider>
   );
 }
 

@@ -37,11 +37,9 @@ const CardStyle = styled(motion.div)`
     width: 320px;
     box-sizing: border-box;
     padding: 10px;
-    background: #ffffff;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     margin: 15px 0px; 
-
     .group-btn>img{
         margin: 0px 3px;
     }
