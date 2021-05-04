@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
 
-function Card() {
+function Card({img}) {
     return (
-        <CardStyle>
+        <CardStyle postImage={img}>
             <div className="header-card">
                 <div className="pf-name">
                     <img alt="img" className="pf-img" src="icon/profile.png" height={40} width={40} />
@@ -17,15 +17,15 @@ function Card() {
                 <img alt="img" src="icon/more.png" className="btn-more" />
             </div>
             <div className="img-card">
-
+                   
             </div>
             <div className="button-card">
                 <div className="group-btn">
-                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}  alt="img" src="icon/like.png" />
-                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/comment.png" />
-                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/rocket.png" />
+                    <motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}  alt="img" src="icon/like.png" />
+                    <motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/comment.png" />
+                    <motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/rocket.png" />
                 </div> 
-                <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/bookmark.png" />
+                <motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/bookmark.png" />
             </div>
             <small>Liked by <b>Edward Jones and 254 others</b></small>
             <p className="card-status">“Men have forgotten this truth,” said the fox. “But you must not forget it. You become responsible, forever, for what you have tamed.” </p>
@@ -83,7 +83,7 @@ const CardStyle = styled(motion.div)`
     }
 
     .img-card{
-        background-image: url('image/damir-kopezhanov-P9_1VLFQ10Y-unsplash.jpeg');
+        background-image: url('image/${props => props.postImage}');
         background-position: center;
         background-size: cover;
         height: 275px;

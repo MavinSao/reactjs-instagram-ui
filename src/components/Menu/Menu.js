@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import {motion} from 'framer-motion';
 function Menu({changeTheme,theme}) {
     return (
-        <MenuBar>
-            <Link to="/"><motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="home" src="icon/Home.png" /></Link> 
-            <Link to="/post"><motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/Post.png" /></Link> 
-            <Link to="/setting"><motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/Setting.png" /></Link> 
-            <Link to="/friends"><motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/friends.png" /></Link>
-            <Link onClick={()=>changeTheme()}><motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src={theme === 'dark'? 'icon/dark.png':'icon/light.png'} /></Link>  
+        <MenuBar className="menu-bar">
+            <Link to="/"><motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="home" src="icon/Home.png" /></Link> 
+            <Link to="/post"><motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/Post.png" /></Link> 
+            <Link to="/setting"><motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/Setting.png" /></Link> 
+            <Link to="/friends"><motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/friends.png" /></Link>
+            <Link onClick={()=>changeTheme()}><motion.img className="icon" whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src={theme === 'dark'? 'icon/dark.png':'icon/light.png'} /></Link>  
         </MenuBar>
     )
 }

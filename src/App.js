@@ -5,7 +5,7 @@ import Content from './components/Content/Content';
 import Profile from './components/Profile/Profile';
 import GlobalStyle from './components/Style/GlobleStyle';
 
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 import {ThemeProvider} from "styled-components";
 import { lightTheme, darkTheme } from "./components/Themes/Themes"

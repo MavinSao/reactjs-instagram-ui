@@ -39,6 +39,8 @@ const Content = styled.div`
     justify-content: center;
     margin: 35px 0px; 
 
+
+
     .btn-edit{
         width: 100px;
         margin: 10px 0px;
@@ -63,10 +65,14 @@ const Content = styled.div`
         }
     }
 
+    .about-path > h3{
+        margin: 10px 0px;
+    }
+
     .profile-path > .profile-image{
         width: 120px;
         height: 120px;
-        background: url("https://cdn.dribbble.com/users/230875/screenshots/12078079/media/c08285d2e039896a565cffeb5eb44a15.jpg?compress=1&resize=1000x750") no-repeat center;
+        background: url("https://cliply.co/wp-content/uploads/2020/08/442008110_GLANCING_AVATAR_3D_400px.gif") no-repeat center;
         background-size: cover;
         border-radius: 50%; 
     }

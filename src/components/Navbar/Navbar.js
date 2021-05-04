@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 function Navbar() {
     return (
-        <Nav>
-            <img alt="ss" width={200} src="logo/BBC_Knowledge_HD.png"/>
+        <Nav className="nav-bar">
+            <img className="icon" alt="ss" width={200} src="logo/BBC_Knowledge_HD.png"/>
             <input className="search-bar" type="text" placeholder="search" />
         </Nav>
     )
