@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 
 function Card({img}) {
     return (
-        <CardStyle postImage={img}>
+        <CardStyle postImage={img} whileHover={{ scale: 1.05 }} >
             <div className="header-card">
                 <div className="pf-name">
                     <img alt="img" className="pf-img" src="icon/profile.png" height={40} width={40} />
@@ -83,7 +83,7 @@ const CardStyle = styled(motion.div)`
     }
 
     .img-card{
-        background-image: url('image/${props => props.postImage}');
+        background-image: url('image/redcharlie-iCPpeZnGrlM-unsplash.jpeg');
         background-position: center;
         background-size: cover;
         height: 275px;
