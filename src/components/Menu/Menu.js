@@ -4,12 +4,12 @@ import styled from 'styled-components';
 function Menu() {
     return (
         <MenuBar>
-            <a><img src="logo/icons8-a_home.png"/></a>
-            <a><img src="logo/icons8-birdhouse.png"/></a>
-            <a><img src="logo/icons8-fireplace.png"/></a>
-            <a><img src="logo/icons8-herbal_medicine.png"/></a>
-            <a><img src="logo/icons8-home_button.png"/></a>
-            <a><img src="logo/icons8-nest.png"/></a>
+            <img alt="img" src="logo/icons8-a_home.png" />
+            <img alt="img" src="logo/icons8-birdhouse.png" />
+            <img alt="img" src="logo/icons8-fireplace.png" />
+            <img alt="img" src="logo/icons8-herbal_medicine.png" />
+            <img alt="img" src="logo/icons8-home_button.png" />
+            <img alt="img" src="logo/icons8-nest.png" />
         </MenuBar>
     )
 }
@@ -21,7 +21,7 @@ const MenuBar = styled.div`
     justify-content: center;
     align-items: center;
     border-right: 1px solid #f7f7f7;
-    >a{
+    >img{
         margin: 25px 0px;
     }
 `

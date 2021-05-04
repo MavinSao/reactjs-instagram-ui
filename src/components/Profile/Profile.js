@@ -1,10 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import ProfileHeader from './Header/ProfileHeader'
+import ProfileContent from './ProfileContent/ProfileContent'
+import ProfileStory from './ProfileStory/ProfileStory'
 
 function Profile() {
     return (
         <ProfileDiv>
-            <h1>Profile</h1>
+            <ProfileHeader />
+            <ProfileContent />
+            <ProfileStory />
         </ProfileDiv>
     )
 }
@@ -12,8 +17,9 @@ function Profile() {
 const ProfileDiv = styled.div`
         flex:4;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        box-sizing: border-box;
+        padding: 15px;
+        flex-direction: column;
 
 `
 

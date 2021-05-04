@@ -6,15 +6,15 @@ import Cards from '../Card/Cards';
 function Content() {
     return (
         <ContentBody>
-            <Navbar/>
-            <Cards/>
+            <Navbar />
+            <Cards />
         </ContentBody>
     )
 }
 
 const ContentBody = styled.div`
         flex:12;
-        background: #fff9ed;
+        background: #f5fffe;
         overflow: auto;
 `
 

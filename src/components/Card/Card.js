@@ -5,24 +5,24 @@ function Card() {
         <CardStyle>
             <div className="header-card">
                 <div className="pf-name">
-                <img className="pf-img" src="https://cdn.dribbble.com/users/230875/screenshots/12078079/media/c08285d2e039896a565cffeb5eb44a15.jpg?compress=1&resize=1000x750" height={40} width={40}/>
+                    <img alt="img" className="pf-img" src="https://cdn.dribbble.com/users/230875/screenshots/12078079/media/c08285d2e039896a565cffeb5eb44a15.jpg?compress=1&resize=1000x750" height={40} width={40} />
                     <div className="username">
-                    <h4>Mavin Sao</h4>
-                    <small>Phnom Penh, Cambodia</small>
+                        <h4>Mavin Sao</h4>
+                        <small>Phnom Penh, Cambodia</small>
                     </div>
                 </div>
-                <img src="icon/icons8-more.png" className="btn-more"/>
+                <img alt="img" src="icon/icons8-more.png" className="btn-more" />
             </div>
             <div className="img-card">
 
             </div>
             <div className="button-card">
                 <div>
-                    <img src="icon/icons8-filled_like.png"/>
-                    <img src="icon/icons8-search_for_love.png"/>
-                    <img src="icon/icons8-rocket.png"/>
+                    <img alt="img" src="icon/icons8-filled_like.png" />
+                    <img alt="img" src="icon/icons8-search_for_love.png" />
+                    <img alt="img" src="icon/icons8-rocket.png" />
                 </div>
-                <img src="icon/icons8-bookmark_ribbon.png"/>
+                <img alt="img" src="icon/icons8-bookmark_ribbon.png" />
             </div>
             <small>Liked by <b>Edward Jones and 254 others</b></small>
             <p className="card-status">“Men have forgotten this truth,” said the fox. “But you must not forget it. You become responsible, forever, for what you have tamed.” </p>
@@ -37,6 +37,7 @@ const CardStyle = styled.div`
     background: #ffffff;
     border-radius: 20px;
     margin: 15px 0px;
+    box-shadow: 1px 1px 1px #555555;   
 
     .card-status{
         margin: 5px 0px;
@@ -82,7 +83,7 @@ const CardStyle = styled.div`
         background-size: cover;
         height: 275px;
         border-radius: 20px;
-        
+
     }
     
 `

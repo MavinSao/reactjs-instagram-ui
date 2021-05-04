@@ -4,8 +4,8 @@ import styled from 'styled-components'
 function Navbar() {
     return (
         <Nav>
-            <a href="#" className="brand"><img src="image/logo.png" width={125}/></a>
-            <input className="search-bar" type="text" placeholder="search"/>
+            <h2>Logo</h2>
+            <input className="search-bar" type="text" placeholder="search" />
         </Nav>
     )
 }
