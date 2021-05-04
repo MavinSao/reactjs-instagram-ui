@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 function ProfileContent() {
     return (
         <Content>
@@ -7,7 +8,7 @@ function ProfileContent() {
                 <div className="profile-image"></div>
                 <h2>Mavin Sao</h2>
                 <div><small>Mobile Dev</small></div>
-                <button className="btn-edit">Edit</button>
+                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} className="btn-edit" >Edit</motion.button>
             </div>
             <div className="follow-path">
                 <div>
@@ -43,6 +44,7 @@ const Content = styled.div`
         margin: 10px 0px;
         padding: 5px 15px;
         background: white;
+        border-radius: 10px;
     }
 
     .follow-path{

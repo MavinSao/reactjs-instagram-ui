@@ -12,6 +12,7 @@ function Navbar() {
 
 const Nav = styled.div`
     position:sticky;
+    z-index: 20;
     top:0;
     left:0;
     padding: 10px;
@@ -20,7 +21,7 @@ const Nav = styled.div`
     align-items: center;
     border-bottom: 1px solid #f7f7f7;
     background: #ffffff;
-    
+
     img{
         margin-left: 10px;
     }

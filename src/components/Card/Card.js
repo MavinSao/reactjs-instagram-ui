@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
+
+
 function Card() {
     return (
         <CardStyle>
@@ -18,11 +21,11 @@ function Card() {
             </div>
             <div className="button-card">
                 <div className="group-btn">
-                    <img alt="img" src="icon/like.png" />
-                    <img alt="img" src="icon/comment.png" />
-                    <img alt="img" src="icon/rocket.png" />
-                </div>
-                <img alt="img" src="icon/bookmark.png" />
+                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}  alt="img" src="icon/like.png" />
+                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/comment.png" />
+                    <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/rocket.png" />
+                </div> 
+                <motion.img whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} alt="img" src="icon/bookmark.png" />
             </div>
             <small>Liked by <b>Edward Jones and 254 others</b></small>
             <p className="card-status">“Men have forgotten this truth,” said the fox. “But you must not forget it. You become responsible, forever, for what you have tamed.” </p>
@@ -30,7 +33,7 @@ function Card() {
     )
 }
 
-const CardStyle = styled.div`
+const CardStyle = styled(motion.div)`
     width: 320px;
     box-sizing: border-box;
     padding: 10px;
