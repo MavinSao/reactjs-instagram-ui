@@ -5,7 +5,7 @@ function ProfileContent() {
         <Content>
             <div className="profile-path">
                 <div className="profile-image"></div>
-                <h3>Mavin Sao</h3>
+                <h2>Mavin Sao</h2>
                 <div><small>Mobile Dev</small></div>
                 <button className="btn-edit">Edit</button>
             </div>
@@ -42,6 +42,7 @@ const Content = styled.div`
         width: 100px;
         margin: 10px 0px;
         padding: 5px 15px;
+        background: white;
     }
 
     .follow-path{
@@ -54,6 +55,10 @@ const Content = styled.div`
 
     .profile-path{
         text-align: center;
+
+        &>*{
+            margin: 8px 0px;
+        }
     }
 
     .profile-path > .profile-image{

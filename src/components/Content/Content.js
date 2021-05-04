@@ -1,13 +1,27 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import styled from 'styled-components';
-import Cards from '../Card/Cards';
+import Home from '../Page/Home';
+import {
+    Switch,
+    Route,
+  } from "react-router-dom";
+import Post from '../Page/Post';
+import Setting from '../Page/Setting';
+import Friends from '../Page/Friends';
+
 
 function Content() {
     return (
         <ContentBody>
-            <Navbar />
-            <Cards />
+              <Navbar />
+            <Switch>
+                <Route exact path="/" component={()=> <Home/>}/>
+                <Route path="/post" component={()=> <Post/>}/>
+                <Route path="/setting" component={()=> <Setting/>}/>
+                <Route path="/friends" component={()=> <Friends/>}/>
+               
+            </Switch>
         </ContentBody>
     )
 }

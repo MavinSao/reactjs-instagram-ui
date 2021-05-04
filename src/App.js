@@ -4,6 +4,7 @@ import Menu from './components/Menu/Menu';
 import Content from './components/Content/Content';
 import Profile from './components/Profile/Profile';
 import GlobalStyle from './components/Style/GlobleStyle';
+import { BrowserRouter as Router} from "react-router-dom";
 
 const Layout = styled.div`
     display: flex;    
@@ -14,12 +15,14 @@ const Layout = styled.div`
 
 function App() {
   return (
-    <Layout>
-      <GlobalStyle/>
-      <Menu />
-      <Content />
-      <Profile />
-    </Layout>
+    <Router>
+      <Layout>
+        <GlobalStyle/>
+        <Menu />
+        <Content />
+        <Profile />
+      </Layout>
+    </Router>
   );
 }
 

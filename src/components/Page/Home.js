@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from './Card'
-function Cards() {
+import Card from '../Card/Card'
+
+function Home() {
     return (
         <GroupCards>
             <Card/>
@@ -30,4 +31,4 @@ const GroupCards = styled.div`
     justify-content: space-around;
 `
 
-export default Cards
+export default Home
